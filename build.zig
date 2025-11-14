@@ -24,7 +24,7 @@ fn add_headers_recursive(p: AddHeaders, dir: std.fs.Dir, curr_prefix: []const u8
 }
 
 fn add_asio_headers(b: *std.Build, lib: *std.Build.Step.Compile) !void {
-    const asio_include_dir = try std.fs.cwd().openDir("asio/include", .{ .iterate = true });
+    const asio_include_dir = try std.fs.cwd().openDir(b.pathFromRoot("asio/include"), .{ .iterate = true });
     try add_headers_recursive(.{
         .lib = lib,
         .b = b,
