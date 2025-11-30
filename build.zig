@@ -25,7 +25,7 @@ pub fn build(b: *std.Build) !void {
     asio.installHeadersDirectory(
         upstream.path("include"),
         "",
-        .{ .include_extensions = &.{".hpp"} },
+        .{ .include_extensions = &.{ ".hpp", ".ipp" } },
     );
 
     b.installArtifact(asio);
