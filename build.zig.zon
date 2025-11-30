@@ -1,6 +1,6 @@
 .{
     .name = .asio,
-    .version = "0.0.1",
+    .version = "1.36.0",
     .minimum_zig_version = "0.15.2",
     .dependencies = .{
         .asio = .{
