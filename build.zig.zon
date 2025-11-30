@@ -2,6 +2,12 @@
     .name = .asio,
     .version = "0.0.1",
     .minimum_zig_version = "0.15.2",
+    .dependencies = .{
+        .asio = .{
+            .url = "https://sourceforge.net/projects/asio/files/asio/1.36.0%20%28Stable%29/asio-1.36.0.tar.gz/download",
+            .hash = "N-V-__8AAEVWQALlR0zZtMpKw7djl1JXTKG1isu-r6Mylz22",
+        },
+    },
     .paths = .{""},
     .fingerprint = 0x9d5b3554134ca114,
 }
